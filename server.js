@@ -47,7 +47,7 @@ app.post('/api/contact', (req, res) => {
   submissions.push(submission);
   fs.writeFileSync(submissionsFile, JSON.stringify(submissions, null, 2));
 
-  res.status(200).json({ message: 'Thank you for your message! Alex will get back to you soon.' });
+  res.status(200).json({ message: 'Thank you for your message! We will get back to you soon.' });
 });
 
 // For any other route, serve index.html
